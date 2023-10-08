@@ -162,11 +162,19 @@ cython_debug/
 # Configuration files
 *.json
 
-# UML diagram outputs
+# UML diagram output
 *.puml
+
+# PlantUML output files
 *.png
 *.svg
+*.eps
 *.pdf
+*.vdx
+*.xmi
+*.scxml
+*.html
+*.txt
 
 # OS specific
 .DS_Store

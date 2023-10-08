@@ -1,5 +1,6 @@
 import click
 import pandas as pd
+from tqdm import tqdm
 
 from salesforce_erd import (
     fields_of,
@@ -32,7 +33,7 @@ def build_erd(config_file):
     # Generate PlantUML text for class diagram
     plantuml_code = write_header(conf.get("diagram_name"))
 
-    for table in tables_meta.name:
+    for table in tqdm(tables_meta.name):
         # Get entity attributes
         columns_meta = fields_of(table, sf, metadata=True)
         columns_meta.soapType = columns_meta.soapType.str[4:]

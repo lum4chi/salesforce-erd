@@ -12,6 +12,7 @@ python = ">=3.11,<3.13"
 simple-salesforce = "^1.12.5"
 pandas = "^2.1.1"
 click = "^8.1.7"
+tqdm = "^4.66.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.9.1"

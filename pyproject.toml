@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "salesforce-erd"
+version = "0.1.0"
+description = "A tool to build your Salesforce instance Entity-Relationship Diagram (ERD)."
+authors = ["lum4chi <francesco.lumachi@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "salesforce_erd"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+simple-salesforce = "^1.12.5"
+pandas = "^2.1.1"
+click = "^8.1.7"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

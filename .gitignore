@@ -159,11 +159,14 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# Configuration file
-config.json
+# Configuration files
+*.json
 
-# UML diagram
-.puml
+# UML diagram outputs
+*.puml
+*.png
+*.svg
+*.pdf
 
 # OS specific
 .DS_Store
